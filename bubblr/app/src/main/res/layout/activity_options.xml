@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/rLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Options"
+        android:id="@+id/optionsTextBox"
+        android:textSize="64dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberOfElements"
+        android:max="25"
+        android:progress="1"
+        android:indeterminate="false"
+        android:layout_below="@+id/nrOfElementsTextBox"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Value: "
+        android:id="@+id/nrOfElementsTextBox"
+        android:layout_below="@+id/optionsTextBox"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sizeOfElements"
+        android:indeterminate="false"
+        android:layout_below="@+id/sizeOfElementsTextBox"
+        android:layout_alignParentStart="true"
+        android:max="300"
+        android:progress="10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/sizeOfElementsTextBox"
+        android:layout_below="@+id/numberOfElements"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Square"
+        android:id="@+id/squareSpeedOfChangeTextBox"
+        android:layout_below="@+id/sizeOfElements"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/squareSpeedOfChange"
+        android:indeterminate="false"
+        android:layout_below="@+id/squareSpeedOfChangeTextBox"
+        android:layout_alignParentStart="true"
+        android:max="3000"
+        android:progress="100" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Square"
+        android:id="@+id/circleSpeedOfChangeTextBox"
+        android:layout_below="@+id/squareSpeedOfChange"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/circleSpeedOfChange"
+        android:indeterminate="false"
+        android:max="3000"
+        android:progress="100"
+        android:layout_below="@+id/circleSpeedOfChangeTextBox"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveButton"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/circleSpeedOfChange"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Square"
+        android:id="@+id/elementCreationSpeedTextBox"
+        android:layout_below="@+id/circleSpeedOfChange"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/elementCreationSpeed"
+        android:indeterminate="false"
+        android:max="3000"
+        android:progress="100"
+        android:layout_below="@+id/elementCreationSpeedTextBox"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" />
+
+</RelativeLayout>
